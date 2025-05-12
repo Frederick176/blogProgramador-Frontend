@@ -14,13 +14,13 @@ export const useComments = (postId) => {
 
     }
 
-    const commentsSubmit = async ({ name, description }) => {
-        if(!name.trim() || !description.trim()) {
+    const commentsSubmit = async ({ name, content }) => {
+        if(!name.trim() || !content.trim()) {
             toast.error('Por favor completa todos los campos');
             return false
         }
 
-        const response = await addComment({ name, description, postId });
+        const response = await addComment({ name, content, postId });
         if(!response.error) {
             toast.success('Comentario agregado');
             setComments([]);
