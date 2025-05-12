@@ -8,7 +8,7 @@ const blogApi = axios.create ({
 
 export const getPublications = async () => {
     try {
-        return await blogApi.get('/publicarions/all')
+        return await blogApi.get('/publications/all')
     }catch (error) {
         return {
             error: true,
@@ -20,7 +20,7 @@ export const getPublications = async () => {
 
 export const recentPublications = async () => {
     try {
-        return await blogApi.get('/publicarions/recent')
+        return await blogApi.get('/publications/recent')
     }catch (error) {
         return {
             error: true,
@@ -32,7 +32,7 @@ export const recentPublications = async () => {
 
 export const oldPublications = async () => {
     try {
-        return await blogApi.get('/publicarions/old')
+        return await blogApi.get('/publications/old')
     }catch (error) {
         return {
             error: true,
@@ -44,7 +44,7 @@ export const oldPublications = async () => {
 
 export const getPublicationsByCourse = async (name) => {
     try {
-        return await blogApi.get(`/publicarions/course/${encodeURIComponent(name)}`)
+        return await blogApi.get(`/publications/course/${encodeURIComponent(name)}`)
     }catch (error) {
         return {
             error: true,
