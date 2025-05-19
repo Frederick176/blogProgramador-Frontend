@@ -4,7 +4,7 @@ import { PublicationsList } from "../components/PublicationsList.jsx";
 
 export const Home = () => {
     return (
-        <main className="bg-gray-100 min-h-screen">
+        <main className="bg-blue-100 min-h-screen">
             <Navbar/>
             <PublicationsList/>   
         </main>

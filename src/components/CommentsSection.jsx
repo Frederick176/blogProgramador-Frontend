@@ -44,13 +44,13 @@ export const CommentsSection = ({ postId }) => {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Nombre"
-                        className="w-full mb-4 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full mb-4 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                     />
                     <textarea
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
                         placeholder="Comentario"
-                        className="w-full mb-4 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full mb-4 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                     />
                     <button
                         type="submit"
